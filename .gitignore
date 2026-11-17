@@ -1,0 +1,25 @@
+# Build output
+target/
+
+# IDEs
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS noise
+.DS_Store
+Thumbs.db
+*:Zone.Identifier
+
+# Local config and secrets: this repo is public, never commit these
+.env
+*.env
+*.pem
+*.key
+application-local.properties
+
+# Logs
+*.log
