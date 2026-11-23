@@ -8,11 +8,11 @@ After=network.target
 [Service]
 Type=simple
 # TODO(L01): replace with the dedicated unprivileged Linux user created in Step 6.
-User=TODO_L01_USER
+User=taskflow
 Group=taskflow
 WorkingDirectory=/opt/taskflow
 # TODO(L01): use the verified absolute java executable and installed jar path.
-ExecStart=TODO_L01_ABSOLUTE_JAVA_COMMAND
+ExecStart=/usr/bin/java -jar /opt/taskflow/taskflow.jar
 # TODO(L01): choose a policy that recovers after a crash, not after a clean stop.
 Restart=no
 RestartSec=3
