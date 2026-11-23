@@ -11,9 +11,9 @@
 ## 2. What each service setting means
 
 - TODO(L01): Why is `User=` not root? Because root has the highest priviliege, apply to an compromisable application will be very risky to the system
-- TODO(L01): What does `WorkingDirectory=` control? WorkingDirectory control where the systemd the application is working
-- TODO(L01): Why use an absolute path in `ExecStart=`? Because systemd always work on the root directory, so an absolute path is the only way to tell it where to get started
-- TODO(L01): What does `Restart=` do? What does it NOT do? Restart tells systemd when to restart the service and how it should do that. I don't know what it does not do
+- TODO(L01): What does `WorkingDirectory=` control? WorkingDirectory control the application is working
+- TODO(L01): Why use an absolute path in `ExecStart=`? To avoid ambiguity if the system have multiple execution path for the same application
+- TODO(L01): What does `Restart=` do? What does it NOT do? Restart tells systemd when to restart the service and how it should do that. I does not restart the service if the command "systemctl stop" run instead of a SIGKILL or SIGTERM
 
 ## 3. Install and verification evidence
 

@@ -14,7 +14,7 @@ WorkingDirectory=/opt/taskflow
 # TODO(L01): use the verified absolute java executable and installed jar path.
 ExecStart=/usr/bin/java -jar /opt/taskflow/taskflow.jar
 # TODO(L01): choose a policy that recovers after a crash, not after a clean stop.
-Restart=no
+Restart=on-failure
 RestartSec=3
 
 [Install]
