@@ -40,4 +40,4 @@ One row per lesson: what I added, and one thing that broke and how I fixed it.
 
 | Lesson | Date | What I added | What broke and how I fixed it |
 |--------|------|--------------|-------------------------------|
-| L00    | TODO(L00) | TODO(L00) | TODO(L00) |
+| L00    | 2026-11-23 | I ran the Maven and the Jar file, along with taskflow check for tool on my computer | The taskflow check failed with one line, because it does not recognize my Docker Desktop. I read it and simply turn Docker Desktop on |
