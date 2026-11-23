@@ -41,3 +41,5 @@ One row per lesson: what I added, and one thing that broke and how I fixed it.
 | Lesson | Date | What I added | What broke and how I fixed it |
 |--------|------|--------------|-------------------------------|
 | L00    | 2026-11-23 | I ran the Maven and the Jar file, along with taskflow check for tool on my computer | The taskflow check failed with one line, because it does not recognize my Docker Desktop. I read it and simply turn Docker Desktop on |
+| L01    | 2026-11-23 | I added the service for running .jar file, along with start it and check for its health with crash recovery | The service failed to start because I misconfigured the ExecStart in the service file. I read the log, confirmed the misconfigured and reconfig it, added the service again and started it successfully |
+
